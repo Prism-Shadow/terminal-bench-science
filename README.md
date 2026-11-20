@@ -22,8 +22,9 @@ Reuse that checkout for other datasets pinned to the same adapter commit, settin
 `ADAPTER_DIR` to its absolute `agents/` directory. Run the package's `job.yaml`
 from the data repository root for a batch, or use the Case command for one trial.
 Use the model, time limits and network settings in the Case. The default host
-limit is four concurrent trials. Apply the shared Docker network only when the
-Case asks for it. For a network-restricted agent, `"$ADAPTER_DIR/agent_host.py"`
+limit is four concurrent trials. For Cases that use `shared-network.yaml`,
+[create the `penguin-bench` network once per Docker host](https://github.com/Prism-Shadow/penguin-harness-benchmark/blob/8a507af0329fed8f9a1baf44d1364b438340c78a/agents/shared-network.yaml#L6) before the first trial.
+For a network-restricted agent, `"$ADAPTER_DIR/agent_host.py"`
 resolves the model's host from the configured Project. The adapter options are
 in its [README](https://github.com/Prism-Shadow/penguin-harness-benchmark/blob/8a507af0329fed8f9a1baf44d1364b438340c78a/agents/README.md).
 
