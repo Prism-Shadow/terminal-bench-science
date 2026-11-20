@@ -4,7 +4,7 @@ https://github.com/Prism-Shadow/penguin-harness-benchmark
 See LICENSE and each dataset's SOURCE.md for provenance and terms.
 
 Terminal-Bench-Science 0.1
-  data/penguinharness-benchmark-sec-d/tasks/
+  penguinharness-benchmark-sec-d/tasks/
   https://github.com/harbor-framework/terminal-bench-science
   Copyright 2026 Harbor Framework Team
   Licensed under the Apache License, Version 2.0.
